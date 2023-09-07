@@ -8,4 +8,8 @@ export const globalStyles = StyleSheet.create({
     text: {
         color: '#000'
     },
+    center: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
 })

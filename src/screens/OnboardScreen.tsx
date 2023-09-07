@@ -10,10 +10,12 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 
 export type RootStackParamList = {
+    OnboardScreen: undefined;
     CreateWalletScreen: undefined;
     LoginWalletScreen: undefined;
+    EVMWalletHomeScreen: undefined;
 };
-type homeScreenProp = NativeStackNavigationProp<RootStackParamList, 'CreateWalletScreen'>;
+type homeScreenProp = NativeStackNavigationProp<RootStackParamList, 'OnboardScreen'>;
 
 function OnboardScreen() {
     const { navigate } = useNavigation<homeScreenProp>()
